@@ -5,7 +5,7 @@ This is a simple iOS application that allows users to browse food items, add the
 - **Food Listing:** View a list of available food items.
 - **Add to Cart:** Select food items to add to the cart.
 - **Adjust Quantity:** Increase or decrease the quantity of items in the cart.
-- **Using Alamofire for HTTP Request
+- **Using Alamofire:** For HTTP Request
 
 ## Screenshots
 
