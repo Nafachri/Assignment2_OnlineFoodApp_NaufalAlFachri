@@ -8,22 +8,49 @@
 
 /* Begin PBXBuildFile section */
 		7F735D112C3B8D060085DDB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F735D102C3B8D060085DDB7 /* AppDelegate.swift */; };
-		7F735D132C3B8D060085DDB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F735D122C3B8D060085DDB7 /* SceneDelegate.swift */; };
-		7F735D152C3B8D060085DDB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F735D142C3B8D060085DDB7 /* ViewController.swift */; };
-		7F735D182C3B8D070085DDB7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7F735D172C3B8D070085DDB7 /* Base */; };
 		7F735D1A2C3B8D080085DDB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F735D192C3B8D080085DDB7 /* Assets.xcassets */; };
 		7F735D1D2C3B8D080085DDB7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7F735D1C2C3B8D080085DDB7 /* Base */; };
+		7F735D292C3B975D0085DDB7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7F735D282C3B975D0085DDB7 /* Alamofire */; };
+		7F735D2F2C3BB8240085DDB7 /* FoodListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F735D2E2C3BB8240085DDB7 /* FoodListService.swift */; };
+		7F735D312C3BCAE50085DDB7 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F735D302C3BCAE50085DDB7 /* Requestable.swift */; };
+		7F735D332C3BCAF10085DDB7 /* Responseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F735D322C3BCAF10085DDB7 /* Responseable.swift */; };
+		7F735D372C3BCCCB0085DDB7 /* FoodListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F735D362C3BCCCB0085DDB7 /* FoodListResponse.swift */; };
+		7F735D3B2C3BCEC80085DDB7 /* OrderFoodService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F735D3A2C3BCEC80085DDB7 /* OrderFoodService.swift */; };
+		7F735D3E2C3BD4340085DDB7 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F735D3D2C3BD4340085DDB7 /* Cart.swift */; };
+		7F735D402C3BD54A0085DDB7 /* CartService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F735D3F2C3BD54A0085DDB7 /* CartService.swift */; };
+		7F735D432C3D2AD90085DDB7 /* FoodListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F735D412C3D2AD90085DDB7 /* FoodListTableViewCell.swift */; };
+		7F735D482C3D2FB80085DDB7 /* FoodListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F735D472C3D2FB80085DDB7 /* FoodListTableViewCell.xib */; };
+		7FFC0E302C3E357200BAEAAA /* CartDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FFC0E2F2C3E357200BAEAAA /* CartDetailViewController.xib */; };
+		7FFC0E312C3E357200BAEAAA /* CartDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFC0E2E2C3E357200BAEAAA /* CartDetailViewController.swift */; };
+		7FFC0E342C3E358400BAEAAA /* CartDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FFC0E332C3E358400BAEAAA /* CartDetailTableViewCell.xib */; };
+		7FFC0E352C3E358400BAEAAA /* CartDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFC0E322C3E358400BAEAAA /* CartDetailTableViewCell.swift */; };
+		7FFC0E3A2C3E452900BAEAAA /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FFC0E392C3E452900BAEAAA /* ViewController.xib */; };
+		7FFC0E3B2C3E452900BAEAAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFC0E382C3E452900BAEAAA /* ViewController.swift */; };
+		7FFC0E3D2C3E5D8100BAEAAA /* HistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFC0E3C2C3E5D8100BAEAAA /* HistoryService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7F735D0D2C3B8D060085DDB7 /* OnlineFoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineFoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F735D102C3B8D060085DDB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7F735D122C3B8D060085DDB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7F735D142C3B8D060085DDB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7F735D172C3B8D070085DDB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7F735D192C3B8D080085DDB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F735D1C2C3B8D080085DDB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F735D1E2C3B8D080085DDB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F735D2E2C3BB8240085DDB7 /* FoodListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListService.swift; sourceTree = "<group>"; };
+		7F735D302C3BCAE50085DDB7 /* Requestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
+		7F735D322C3BCAF10085DDB7 /* Responseable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Responseable.swift; sourceTree = "<group>"; };
+		7F735D362C3BCCCB0085DDB7 /* FoodListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListResponse.swift; sourceTree = "<group>"; };
+		7F735D3A2C3BCEC80085DDB7 /* OrderFoodService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderFoodService.swift; sourceTree = "<group>"; };
+		7F735D3D2C3BD4340085DDB7 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		7F735D3F2C3BD54A0085DDB7 /* CartService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartService.swift; sourceTree = "<group>"; };
+		7F735D412C3D2AD90085DDB7 /* FoodListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListTableViewCell.swift; sourceTree = "<group>"; };
+		7F735D472C3D2FB80085DDB7 /* FoodListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodListTableViewCell.xib; sourceTree = "<group>"; };
+		7FFC0E2E2C3E357200BAEAAA /* CartDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartDetailViewController.swift; sourceTree = "<group>"; };
+		7FFC0E2F2C3E357200BAEAAA /* CartDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartDetailViewController.xib; sourceTree = "<group>"; };
+		7FFC0E322C3E358400BAEAAA /* CartDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartDetailTableViewCell.swift; sourceTree = "<group>"; };
+		7FFC0E332C3E358400BAEAAA /* CartDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartDetailTableViewCell.xib; sourceTree = "<group>"; };
+		7FFC0E382C3E452900BAEAAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7FFC0E392C3E452900BAEAAA /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		7FFC0E3C2C3E5D8100BAEAAA /* HistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F735D292C3B975D0085DDB7 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +84,100 @@
 		7F735D0F2C3B8D060085DDB7 /* OnlineFoodApp */ = {
 			isa = PBXGroup;
 			children = (
+				7F735D452C3D2AE70085DDB7 /* View */,
+				7F735D342C3BCB2B0085DDB7 /* Service */,
+				7F735D2D2C3BB80F0085DDB7 /* Networking */,
 				7F735D102C3B8D060085DDB7 /* AppDelegate.swift */,
-				7F735D122C3B8D060085DDB7 /* SceneDelegate.swift */,
-				7F735D142C3B8D060085DDB7 /* ViewController.swift */,
-				7F735D162C3B8D070085DDB7 /* Main.storyboard */,
+				7FFC0E382C3E452900BAEAAA /* ViewController.swift */,
+				7FFC0E392C3E452900BAEAAA /* ViewController.xib */,
 				7F735D192C3B8D080085DDB7 /* Assets.xcassets */,
 				7F735D1B2C3B8D080085DDB7 /* LaunchScreen.storyboard */,
 				7F735D1E2C3B8D080085DDB7 /* Info.plist */,
 			);
 			path = OnlineFoodApp;
+			sourceTree = "<group>";
+		};
+		7F735D2D2C3BB80F0085DDB7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				7F735D322C3BCAF10085DDB7 /* Responseable.swift */,
+				7F735D302C3BCAE50085DDB7 /* Requestable.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		7F735D342C3BCB2B0085DDB7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7FFC0E3E2C3E5DCE00BAEAAA /* History */,
+				7F735D3C2C3BD4260085DDB7 /* Cart */,
+				7F735D392C3BCEB50085DDB7 /* OrderFood */,
+				7F735D352C3BCB410085DDB7 /* FoodList */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7F735D352C3BCB410085DDB7 /* FoodList */ = {
+			isa = PBXGroup;
+			children = (
+				7F735D2E2C3BB8240085DDB7 /* FoodListService.swift */,
+				7F735D362C3BCCCB0085DDB7 /* FoodListResponse.swift */,
+			);
+			path = FoodList;
+			sourceTree = "<group>";
+		};
+		7F735D392C3BCEB50085DDB7 /* OrderFood */ = {
+			isa = PBXGroup;
+			children = (
+				7F735D3A2C3BCEC80085DDB7 /* OrderFoodService.swift */,
+			);
+			path = OrderFood;
+			sourceTree = "<group>";
+		};
+		7F735D3C2C3BD4260085DDB7 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				7F735D3D2C3BD4340085DDB7 /* Cart.swift */,
+				7F735D3F2C3BD54A0085DDB7 /* CartService.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		7F735D452C3D2AE70085DDB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7FFC0E2D2C3E2FEB00BAEAAA /* CartDetail */,
+				7F735D462C3D2B020085DDB7 /* FoodList */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F735D462C3D2B020085DDB7 /* FoodList */ = {
+			isa = PBXGroup;
+			children = (
+				7F735D412C3D2AD90085DDB7 /* FoodListTableViewCell.swift */,
+				7F735D472C3D2FB80085DDB7 /* FoodListTableViewCell.xib */,
+			);
+			path = FoodList;
+			sourceTree = "<group>";
+		};
+		7FFC0E2D2C3E2FEB00BAEAAA /* CartDetail */ = {
+			isa = PBXGroup;
+			children = (
+				7FFC0E2E2C3E357200BAEAAA /* CartDetailViewController.swift */,
+				7FFC0E2F2C3E357200BAEAAA /* CartDetailViewController.xib */,
+				7FFC0E322C3E358400BAEAAA /* CartDetailTableViewCell.swift */,
+				7FFC0E332C3E358400BAEAAA /* CartDetailTableViewCell.xib */,
+			);
+			path = CartDetail;
+			sourceTree = "<group>";
+		};
+		7FFC0E3E2C3E5DCE00BAEAAA /* History */ = {
+			isa = PBXGroup;
+			children = (
+				7FFC0E3C2C3E5D8100BAEAAA /* HistoryService.swift */,
+			);
+			path = History;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +196,9 @@
 			dependencies = (
 			);
 			name = OnlineFoodApp;
+			packageProductDependencies = (
+				7F735D282C3B975D0085DDB7 /* Alamofire */,
+			);
 			productName = OnlineFoodApp;
 			productReference = 7F735D0D2C3B8D060085DDB7 /* OnlineFoodApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +227,9 @@
 				Base,
 			);
 			mainGroup = 7F735D042C3B8D060085DDB7;
+			packageReferences = (
+				7F735D272C3B975D0085DDB7 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 7F735D0E2C3B8D060085DDB7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +244,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FFC0E3A2C3E452900BAEAAA /* ViewController.xib in Resources */,
+				7FFC0E302C3E357200BAEAAA /* CartDetailViewController.xib in Resources */,
 				7F735D1A2C3B8D080085DDB7 /* Assets.xcassets in Resources */,
+				7F735D482C3D2FB80085DDB7 /* FoodListTableViewCell.xib in Resources */,
 				7F735D1D2C3B8D080085DDB7 /* Base in Resources */,
-				7F735D182C3B8D070085DDB7 /* Base in Resources */,
+				7FFC0E342C3E358400BAEAAA /* CartDetailTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +260,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F735D152C3B8D060085DDB7 /* ViewController.swift in Sources */,
+				7F735D312C3BCAE50085DDB7 /* Requestable.swift in Sources */,
+				7FFC0E3D2C3E5D8100BAEAAA /* HistoryService.swift in Sources */,
+				7F735D3E2C3BD4340085DDB7 /* Cart.swift in Sources */,
+				7F735D372C3BCCCB0085DDB7 /* FoodListResponse.swift in Sources */,
+				7F735D402C3BD54A0085DDB7 /* CartService.swift in Sources */,
+				7FFC0E352C3E358400BAEAAA /* CartDetailTableViewCell.swift in Sources */,
+				7FFC0E312C3E357200BAEAAA /* CartDetailViewController.swift in Sources */,
 				7F735D112C3B8D060085DDB7 /* AppDelegate.swift in Sources */,
-				7F735D132C3B8D060085DDB7 /* SceneDelegate.swift in Sources */,
+				7FFC0E3B2C3E452900BAEAAA /* ViewController.swift in Sources */,
+				7F735D2F2C3BB8240085DDB7 /* FoodListService.swift in Sources */,
+				7F735D432C3D2AD90085DDB7 /* FoodListTableViewCell.swift in Sources */,
+				7F735D332C3BCAF10085DDB7 /* Responseable.swift in Sources */,
+				7F735D3B2C3BCEC80085DDB7 /* OrderFoodService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7F735D162C3B8D070085DDB7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7F735D172C3B8D070085DDB7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7F735D1B2C3B8D080085DDB7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +421,6 @@
 				INFOPLIST_FILE = OnlineFoodApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +448,6 @@
 				INFOPLIST_FILE = OnlineFoodApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -363,6 +485,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7F735D272C3B975D0085DDB7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7F735D282C3B975D0085DDB7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F735D272C3B975D0085DDB7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7F735D052C3B8D060085DDB7 /* Project object */;
 }

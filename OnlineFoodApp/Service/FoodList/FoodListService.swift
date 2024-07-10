@@ -8,25 +8,22 @@
 import Foundation
 import Alamofire
 
-class FoodListService {
-  
-  func getFood(completion: @escaping (Result) -> Void) {
-      AF.request("http://localhost:3002/menu/", method: .get, encoding: URLEncoding.default).responseData { response in
-        switch response.result {
-        case .success(let data):
-          let decoder = JSONDecoder()
-          do {
-            let response = try decoder.decode(MenuResponse.self, from: data)
-            completion(.success(response.data))
-          } catch {
-            completion(.failure(error))
-          }
+protocol FoodListServiceable {
+  func getFoodList(onComplete: @escaping (Result<FoodListResponse,PCError>) -> Void)
+}
 
-        case .failure(let error):
-          completion(.failure(error))
-        }
-      }
-    }
+class FoodListService: FoodListServiceable {
+  
+  let requestor: Requestable
+  let baseAPI = "http://localhost:3001"
+  
+  init(requestor: Requestable = NetworkRequest()) {
+    self.requestor = requestor
+  }
+  
+  func getFoodList(onComplete: @escaping (Result<FoodListResponse,PCError>) -> Void) {
+    requestor.request("\(baseAPI)/food", method: .get, params: [:], onComplete: onComplete)
+  }
 }
 
 
