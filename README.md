@@ -11,8 +11,8 @@ This is a simple iOS application that allows users to browse food items, add the
 ## Screenshots
 
 ![Simulator Screenshot - iPhone 15 Pro - 2024-07-10 at 20 59 49](https://github.com/Nafachri/Assignment2_OnlineFoodApp_NaufalAlFachri/assets/71099136/2751bc2f-f3ff-45a2-b66d-25553e14f9c4)
+![Simulator Screenshot - iPhone 15 Pro - 2024-07-10 at 20 59 55](https://github.com/Nafachri/Assignment2_OnlineFoodApp_NaufalAlFachri/assets/71099136/831f9ca5-2bd0-4fe0-85e4-01e1869eb7fa)
 
-![Screenshot 2](screenshots/screenshot2.png)
 
 ## Installation
 
