@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CartDetailViewController.swift
 //  OnlineFoodApp
 //
 //  Created by Naufal Al-Fachri on 10/07/24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CartDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
