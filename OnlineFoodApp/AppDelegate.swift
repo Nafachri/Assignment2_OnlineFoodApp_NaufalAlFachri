@@ -24,6 +24,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window?.rootViewController = navigationController
     window?.makeKeyAndVisible()
     
+    if let storedTheme = UserDefaults.standard.string(forKey: "appTheme") {
+        if storedTheme == "dark" {
+            window?.overrideUserInterfaceStyle = .dark
+        } else {
+            window?.overrideUserInterfaceStyle = .light
+        }
+    } else {
+        // Default to system appearance
+        window?.overrideUserInterfaceStyle = .unspecified
+    }
+    
     return true
   }
 
