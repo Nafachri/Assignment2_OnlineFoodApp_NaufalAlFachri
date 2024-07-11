@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentViewController" customModule="OnlineFoodApp" customModuleProvider="target">
+            <connections>
+                <outlet property="foodItemLabel" destination="uGP-et-Tk9" id="mfE-Nb-LEl"/>
+                <outlet property="totalAmountLabel" destination="4ys-T6-4dc" id="Fhf-RO-gIQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SGz-9m-rVE">
+                    <rect key="frame" x="46.666666666666657" y="276" width="300" height="300"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Item" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGP-et-Tk9">
+                            <rect key="frame" x="16" y="15.999999999999998" width="76.333333333333329" height="20.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.98823529409999999" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ys-T6-4dc">
+                            <rect key="frame" x="16" y="52.333333333333314" width="101" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.98823529409999999" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1K-RQ-c3P">
+                            <rect key="frame" x="124.00000000000001" y="249" width="51.666666666666671" height="35"/>
+                            <color key="tintColor" red="0.3921568627" green="0.39215683940000001" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Pay"/>
+                            <connections>
+                                <action selector="payButtonHandler:" destination="-1" eventType="touchUpInside" id="qa0-Ne-bGK"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGray4Color"/>
+                    <constraints>
+                        <constraint firstItem="B1K-RQ-c3P" firstAttribute="centerX" secondItem="SGz-9m-rVE" secondAttribute="centerX" id="5VQ-po-jhq"/>
+                        <constraint firstItem="4ys-T6-4dc" firstAttribute="top" secondItem="uGP-et-Tk9" secondAttribute="bottom" constant="16" id="I06-YU-7GP"/>
+                        <constraint firstItem="uGP-et-Tk9" firstAttribute="top" secondItem="SGz-9m-rVE" secondAttribute="top" constant="16" id="UHC-px-kGi"/>
+                        <constraint firstAttribute="bottom" secondItem="B1K-RQ-c3P" secondAttribute="bottom" constant="16" id="cSi-fN-Nbc"/>
+                        <constraint firstAttribute="width" constant="300" id="e0S-cH-iuh"/>
+                        <constraint firstItem="4ys-T6-4dc" firstAttribute="leading" secondItem="SGz-9m-rVE" secondAttribute="leading" constant="16" id="hLA-wY-p6W"/>
+                        <constraint firstAttribute="height" constant="300" id="lPd-JO-gP3"/>
+                        <constraint firstItem="uGP-et-Tk9" firstAttribute="leading" secondItem="SGz-9m-rVE" secondAttribute="leading" constant="16" id="pR9-Pj-A6F"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="SGz-9m-rVE" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="7fd-ud-pQz"/>
+                <constraint firstItem="SGz-9m-rVE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Cvl-da-R2c"/>
+            </constraints>
+            <point key="canvasLocation" x="38.931297709923662" y="-12.67605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

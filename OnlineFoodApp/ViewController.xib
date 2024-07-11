@@ -20,29 +20,44 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tVq-rq-wcx">
-                    <rect key="frame" x="0.0" y="59" width="393" height="743"/>
+                    <rect key="frame" x="0.0" y="119" width="393" height="659"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WiK-x5-URE">
-                    <rect key="frame" x="0.0" y="801.66666666666663" width="393" height="34.333333333333371"/>
-                    <color key="tintColor" red="0.070588238540000001" green="0.1176470518" blue="0.1294117719" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" image="cart" catalog="system"/>
-                    <connections>
-                        <action selector="cartButtonHandler:" destination="-1" eventType="touchUpInside" id="r7K-dV-ffD"/>
-                    </connections>
-                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="a25-0P-dl8">
+                    <rect key="frame" x="145" y="778" width="107.33333333333331" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WiK-x5-URE" userLabel="Cart">
+                            <rect key="frame" x="0.0" y="0.0" width="53.666666666666664" height="40"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="cart" catalog="system"/>
+                            <connections>
+                                <action selector="cartButtonHandler:" destination="-1" eventType="touchUpInside" id="r7K-dV-ffD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBp-ue-RO8" userLabel="History">
+                            <rect key="frame" x="53.666666666666657" y="0.0" width="53.666666666666657" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="clock" catalog="system"/>
+                            <connections>
+                                <action selector="historyButtonHandler:" destination="-1" eventType="touchUpInside" id="wXr-E7-O5x"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="WiK-x5-URE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2zf-vN-3V3"/>
-                <constraint firstItem="tVq-rq-wcx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="8xf-ls-jbD"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="tVq-rq-wcx" secondAttribute="bottom" constant="16" id="IiO-Ax-G66"/>
+                <constraint firstItem="a25-0P-dl8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="145" id="GEr-yg-86I"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="tVq-rq-wcx" secondAttribute="bottom" constant="40" id="IiO-Ax-G66"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tVq-rq-wcx" secondAttribute="trailing" id="Q8S-w3-O9d"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WiK-x5-URE" secondAttribute="trailing" id="Vwz-Rn-yP7"/>
-                <constraint firstItem="tVq-rq-wcx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="XZx-ul-a3N"/>
-                <constraint firstAttribute="bottom" secondItem="WiK-x5-URE" secondAttribute="bottom" constant="16" id="r3A-X5-E3V"/>
+                <constraint firstItem="tVq-rq-wcx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="XZx-ul-a3N"/>
+                <constraint firstItem="a25-0P-dl8" firstAttribute="top" secondItem="tVq-rq-wcx" secondAttribute="bottom" id="iCS-b0-ivK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="a25-0P-dl8" secondAttribute="bottom" id="pDw-sA-VBQ"/>
                 <constraint firstItem="tVq-rq-wcx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="sRv-9H-Kcw"/>
             </constraints>
             <point key="canvasLocation" x="18" y="58"/>
@@ -50,6 +65,7 @@
     </objects>
     <resources>
         <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="clock" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

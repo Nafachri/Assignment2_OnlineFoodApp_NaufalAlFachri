@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CartItem: Equatable, Hashable {
+struct CartItem: Equatable, Hashable, Codable {
   
   static func == (lhs: CartItem, rhs: CartItem) -> Bool {
     lhs.id == rhs.id

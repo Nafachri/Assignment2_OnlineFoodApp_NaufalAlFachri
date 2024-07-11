@@ -20,6 +20,12 @@
 		7F735D402C3BD54A0085DDB7 /* CartService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F735D3F2C3BD54A0085DDB7 /* CartService.swift */; };
 		7F735D432C3D2AD90085DDB7 /* FoodListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F735D412C3D2AD90085DDB7 /* FoodListTableViewCell.swift */; };
 		7F735D482C3D2FB80085DDB7 /* FoodListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F735D472C3D2FB80085DDB7 /* FoodListTableViewCell.xib */; };
+		7F7ED16A2C3FA1DD00764FBA /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7ED1682C3FA1DD00764FBA /* HistoryTableViewCell.swift */; };
+		7F7ED16B2C3FA1DD00764FBA /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F7ED1692C3FA1DD00764FBA /* HistoryTableViewCell.xib */; };
+		7F8205BF2C3F9E0D00A73C9D /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8205BD2C3F9E0D00A73C9D /* HistoryViewController.swift */; };
+		7F8205C02C3F9E0D00A73C9D /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F8205BE2C3F9E0D00A73C9D /* HistoryViewController.xib */; };
+		7FBF91CF2C3EE878002629C8 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBF91CD2C3EE878002629C8 /* PaymentViewController.swift */; };
+		7FBF91D02C3EE878002629C8 /* PaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FBF91CE2C3EE878002629C8 /* PaymentViewController.xib */; };
 		7FFC0E302C3E357200BAEAAA /* CartDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FFC0E2F2C3E357200BAEAAA /* CartDetailViewController.xib */; };
 		7FFC0E312C3E357200BAEAAA /* CartDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFC0E2E2C3E357200BAEAAA /* CartDetailViewController.swift */; };
 		7FFC0E342C3E358400BAEAAA /* CartDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FFC0E332C3E358400BAEAAA /* CartDetailTableViewCell.xib */; };
@@ -44,6 +50,12 @@
 		7F735D3F2C3BD54A0085DDB7 /* CartService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartService.swift; sourceTree = "<group>"; };
 		7F735D412C3D2AD90085DDB7 /* FoodListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListTableViewCell.swift; sourceTree = "<group>"; };
 		7F735D472C3D2FB80085DDB7 /* FoodListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodListTableViewCell.xib; sourceTree = "<group>"; };
+		7F7ED1682C3FA1DD00764FBA /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		7F7ED1692C3FA1DD00764FBA /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
+		7F8205BD2C3F9E0D00A73C9D /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		7F8205BE2C3F9E0D00A73C9D /* HistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
+		7FBF91CD2C3EE878002629C8 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		7FBF91CE2C3EE878002629C8 /* PaymentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentViewController.xib; sourceTree = "<group>"; };
 		7FFC0E2E2C3E357200BAEAAA /* CartDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartDetailViewController.swift; sourceTree = "<group>"; };
 		7FFC0E2F2C3E357200BAEAAA /* CartDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartDetailViewController.xib; sourceTree = "<group>"; };
 		7FFC0E322C3E358400BAEAAA /* CartDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartDetailTableViewCell.swift; sourceTree = "<group>"; };
@@ -146,6 +158,8 @@
 		7F735D452C3D2AE70085DDB7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7F8205BC2C3F9DF900A73C9D /* History */,
+				7FBF91CC2C3EE86A002629C8 /* Payment */,
 				7FFC0E2D2C3E2FEB00BAEAAA /* CartDetail */,
 				7F735D462C3D2B020085DDB7 /* FoodList */,
 			);
@@ -159,6 +173,26 @@
 				7F735D472C3D2FB80085DDB7 /* FoodListTableViewCell.xib */,
 			);
 			path = FoodList;
+			sourceTree = "<group>";
+		};
+		7F8205BC2C3F9DF900A73C9D /* History */ = {
+			isa = PBXGroup;
+			children = (
+				7F8205BD2C3F9E0D00A73C9D /* HistoryViewController.swift */,
+				7F8205BE2C3F9E0D00A73C9D /* HistoryViewController.xib */,
+				7F7ED1682C3FA1DD00764FBA /* HistoryTableViewCell.swift */,
+				7F7ED1692C3FA1DD00764FBA /* HistoryTableViewCell.xib */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		7FBF91CC2C3EE86A002629C8 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				7FBF91CD2C3EE878002629C8 /* PaymentViewController.swift */,
+				7FBF91CE2C3EE878002629C8 /* PaymentViewController.xib */,
+			);
+			path = Payment;
 			sourceTree = "<group>";
 		};
 		7FFC0E2D2C3E2FEB00BAEAAA /* CartDetail */ = {
@@ -246,6 +280,9 @@
 			files = (
 				7FFC0E3A2C3E452900BAEAAA /* ViewController.xib in Resources */,
 				7FFC0E302C3E357200BAEAAA /* CartDetailViewController.xib in Resources */,
+				7FBF91D02C3EE878002629C8 /* PaymentViewController.xib in Resources */,
+				7F8205C02C3F9E0D00A73C9D /* HistoryViewController.xib in Resources */,
+				7F7ED16B2C3FA1DD00764FBA /* HistoryTableViewCell.xib in Resources */,
 				7F735D1A2C3B8D080085DDB7 /* Assets.xcassets in Resources */,
 				7F735D482C3D2FB80085DDB7 /* FoodListTableViewCell.xib in Resources */,
 				7F735D1D2C3B8D080085DDB7 /* Base in Resources */,
@@ -263,11 +300,14 @@
 				7F735D312C3BCAE50085DDB7 /* Requestable.swift in Sources */,
 				7FFC0E3D2C3E5D8100BAEAAA /* HistoryService.swift in Sources */,
 				7F735D3E2C3BD4340085DDB7 /* Cart.swift in Sources */,
+				7F8205BF2C3F9E0D00A73C9D /* HistoryViewController.swift in Sources */,
 				7F735D372C3BCCCB0085DDB7 /* FoodListResponse.swift in Sources */,
 				7F735D402C3BD54A0085DDB7 /* CartService.swift in Sources */,
 				7FFC0E352C3E358400BAEAAA /* CartDetailTableViewCell.swift in Sources */,
 				7FFC0E312C3E357200BAEAAA /* CartDetailViewController.swift in Sources */,
+				7FBF91CF2C3EE878002629C8 /* PaymentViewController.swift in Sources */,
 				7F735D112C3B8D060085DDB7 /* AppDelegate.swift in Sources */,
+				7F7ED16A2C3FA1DD00764FBA /* HistoryTableViewCell.swift in Sources */,
 				7FFC0E3B2C3E452900BAEAAA /* ViewController.swift in Sources */,
 				7F735D2F2C3BB8240085DDB7 /* FoodListService.swift in Sources */,
 				7F735D432C3D2AD90085DDB7 /* FoodListTableViewCell.swift in Sources */,

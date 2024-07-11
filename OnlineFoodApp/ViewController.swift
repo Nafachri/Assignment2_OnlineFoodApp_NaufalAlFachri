@@ -14,8 +14,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
   
   @IBOutlet weak var tableView: UITableView!
   
+  let modeSwitch: UISwitch = {
+    let modeSwitch = UISwitch()
+    modeSwitch.translatesAutoresizingMaskIntoConstraints = false
+    return modeSwitch
+  }()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    setupUI()
+    modeSwitch.addTarget(self, action: #selector(switchValueChanged(_:)), for: .valueChanged)
+
+    
+    
     tableView.dataSource = self
     tableView.delegate = self
     
@@ -62,6 +74,31 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     let cartDetailView = CartDetailViewController(cartService: cartService)
     self.navigationController?.pushViewController(cartDetailView, animated: true)
   }
+  @IBAction func historyButtonHandler(_ sender: UIButton) {
+    let historyView = HistoryViewController(nibName: "HistoryViewController", bundle: nil)
+    self.navigationController?.pushViewController(historyView, animated: true)
+  }
   
+  private func setupUI() {
+    // Add switch to view
+    view.addSubview(modeSwitch)
+    
+    // Set switch constraints
+    modeSwitch.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16).isActive = true
+    modeSwitch.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16).isActive = true
+    
+  }
+  
+  @objc private func switchValueChanged(_ sender: UISwitch) {
+      if sender.isOn {
+          // Dark mode
+          UserDefaults.standard.set("dark", forKey: "appTheme")
+          overrideUserInterfaceStyle = .dark
+      } else {
+          // Light mode
+          UserDefaults.standard.set("light", forKey: "appTheme")
+          overrideUserInterfaceStyle = .light
+      }
+  }
 }
 

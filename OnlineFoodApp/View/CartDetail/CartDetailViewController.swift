@@ -36,11 +36,11 @@ class CartDetailViewController: UIViewController, UITableViewDelegate, UITableVi
   
   @objc func backButtonHandler(){
     self.navigationController?.popViewController(animated: true)
-    print("button clicked")
   }
   
   @objc func nextButtonHandler(){
-    print("button clicked")
+    let paymentView = PaymentViewController(cartService: cartService)
+    self.navigationController?.pushViewController(paymentView, animated: true)
   }
 
   
